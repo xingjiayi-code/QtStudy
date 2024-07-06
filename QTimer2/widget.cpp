@@ -19,8 +19,8 @@ Widget::Widget(QWidget *parent)
         QPixmap * pixMap = new QPixmap(path);
         ui->label->setPixmap(*pixMap);
         number++;
-        if(number == 5){
-            number == 1;
+        if(number > 5){
+            number = 1;
         }
     });
 }
